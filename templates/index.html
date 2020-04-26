@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to BBC News Highlights</title>
+    </head>
+<body>
+    <div class="jumbotron" style="color: black;">
+        <h1> News Updates Online </h1>
+    </div>
+
+    <div class="container">
+        {% for pubAt, author, news, desc, url in context %}
+        <p>{{pubAt}}</p>
+        <p>{{author}}: {{news}}</p>
+        <!-- <h3>News: </h3> {{news}} -->
+        <h4>Description: </h4> {{desc}}
+        <a href="{{url}}" target="_blank">Read more</a>
+        {% endfor %}
+   </div>
+</body>
+</html>
