@@ -11,26 +11,27 @@ News Hub is a web appliction that displays selected news sources from around the
 * Click on an article and read it fully from the news source
 
 ## Specifications
-|           Behaviour                            |         Input        |                  Output               |
-|------------------------------------------------|----------------------|---------------------------------------|
-|               Displays news sources            |   On page load       |     List of various news sources      |
-|  Displays articles from a selected news source |  Click a news source | Redirected to a page with a list of articles from that source        |
-|      Display the preview of an article         |      On page load    | Each article displays title, author, description and publication date     |
-|            Read an entire article              |    Click **'Read'**  | Redirected to the news home page to read the entire article         |
+|           Behaviour                            |         Input         |                  Output               |
+|------------------------------------------------|-----------------------|---------------------------------------|
+|               Displays news sources            | **On page load**      |     List of various news sources      |
+|  Displays articles from a selected news source |**Click a news source**| Redirected to a page with a list of articles from that source        |
+|      Display the preview of an article         |    **On page load**   | Each article displays title, author, description and publication date     |
+|            Read an entire article              |   **Click **'Read'**  | Redirected to the news home page to read the entire article         |
 
 ## Prerequisites
 
 You need the following installation to run the application locally on your machine:
-
+```
 -Python version 3.6
 -Flask
 -Pip
 -virtualenv
 -A text Editor
+```
 
 ## Getting started
 
-* Clone git clone 
+* Clone ```git clone https://github.com/Joan-w/News-App.git ```
 * Install python3.6
 * Create a virtual environmeent, open using code
 * Visit [https://newsapi.org/] and register for an API key and edit app.py with your own api_key.
