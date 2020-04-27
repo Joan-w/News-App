@@ -8,13 +8,41 @@
           crossorigin="anonymous">
     </head>
 <body>
-    <div class="container">
-        {% for pubAt, author, news, desc, url in context %}
-        <p>{{pubAt}}</p>
-        <p>{{author}}: {{news}}</p>
-        <p> {{desc}} </p>
-        <p><a href="{{url}}" target="_blank">Read more</a></p>
-        {% endfor %}
-   </div>
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('bbcNews')}}">
+                    BBC NEWS
+                </a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('foxNews')}}">
+                    FOX NEWS</a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('cnnNews')}}">
+                    CNN NEWS
+                </a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('mtvNews')}}">
+                    MTV NEWS
+                </a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('natgeoNews')}}">
+                    NAT GEO NEWS
+                </a>
+            </button>
+        </div>
+        <div class="container text-center">
+            {% for pubAt, author, news, desc, url in context %}
+            <p>{{pubAt}}</p>
+            <p>{{author}}: {{news}}</p>
+            <p> {{desc}} </p>
+            <p><a href="{{url}}" target="_blank">Read more</a></p>
+            {% endfor %}
+       </div>
+    </div>
 </body>
 </html>
