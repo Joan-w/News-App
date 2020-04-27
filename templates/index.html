@@ -2,53 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Welcome to BBC News Highlights</title>
+        <title>Welcome to News Hub Highlights</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     </head>
 <body>
-    <div class="container-fluid">
-        <div class="container text-center" style="padding: 40px;">
+    <div class="container-fluid" style="background-image: url('../static/Images/home.jpg'); background-size: cover;
+    height: 675px;">
+        <div class="container text-center" style="padding: 40px; background-color: black; opacity: .7; 
+        height: 675px; width: 70%;">
             <h1 style="margin-top: 17%; font-weight: 600; font-family: monospace; color: crimson;
              font-size: 70px;">
                 WELCOME TO NEWS HUB
             </h1>
-            <h3 style="font-family:monospace;font-size: 30px;">
+            <h3 style="font-family:monospace;font-size: 30px; color: white;">
                 Home of all news highlights from all over the world
             </h3>
             <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
             'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: italic; font-weight: 600;
-            font-size: 20px;">
+            font-size: 20px; color: white;">
             From below you get to choose the available news sources that you wanna visit.
                 <br>Lets get started....
             </p>
-
+            <br>
             <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('bbcNews')}}">
+                <a style="color: white; font-weight: bold; text-decoration: none;" href="{{url_for('bbcNews')}}">
                     BBC NEWS
                 </a>
             </button>
             <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('foxNews')}}">
+                <a style="color: white; font-weight: bold; text-decoration: none;" href="{{url_for('foxNews')}}">
                     FOX NEWS</a>
             </button>
             <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('cnnNews')}}">
+                <a style="color: white; font-weight: bold; text-decoration: none;" href="{{url_for('cnnNews')}}">
                     CNN NEWS
                 </a>
             </button>
             <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('mtvNews')}}">
+                <a style="color: white; font-weight: bold; text-decoration: none;" href="{{url_for('mtvNews')}}">
                     MTV NEWS
                 </a>
             </button>
             <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('natgeoNews')}}">
+                <a style="color: white; font-weight: bold; text-decoration: none;" href="{{url_for('natgeoNews')}}">
                     NAT GEO NEWS
                 </a>
             </button>
         </div>
    </div>
-</body>
+</body">
 </html>

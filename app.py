@@ -56,7 +56,7 @@ def bbcNews():
     mylist = zip(pubAt, author, news, desc, url)
     
 
-    return render_template('index.html' context = mylist)
+    return render_template('bbc.html', context = mylist)
 
 
 @app.route('/fox')
