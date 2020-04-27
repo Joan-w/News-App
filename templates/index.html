@@ -9,17 +9,45 @@
     </head>
 <body>
     <div class="container-fluid">
-        <div class="container">
-            <h1>WELCOME TO NEWS HUB</h1>
-            <h3>Home of all news highlights from all over the world</h3>
-            <p>From below you get to choose the news sources that you wanna visit.
+        <div class="container text-center" style="padding: 40px;">
+            <h1 style="margin-top: 17%; font-weight: 600; font-family: monospace; color: crimson;
+             font-size: 70px;">
+                WELCOME TO NEWS HUB
+            </h1>
+            <h3 style="font-family:monospace;font-size: 30px;">
+                Home of all news highlights from all over the world
+            </h3>
+            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: italic; font-weight: 600;
+            font-size: 20px;">
+            From below you get to choose the available news sources that you wanna visit.
                 <br>Lets get started....
             </p>
-            <button class="btn btn-outline-primary" type="button"><a href="{{url_for('bbcNews')}}">BBC NEWS</a></button>
-            <button class="btn btn-outline-primary" type="button"><a href="{{url_for('foxNews')}}">FOX NEWS</a></button>
-            <button class="btn btn-outline-primary" type="button"><a href="{{url_for('cnnNews')}}">CNN NEWS</a></button>
-            <button class="btn btn-outline-primary" type="button"><a href="{{url_for('mtvNews')}}">MTV NEWS</a></button>
-            <button class="btn btn-outline-primary" type="button"><a href="{{url_for('natgeoNews')}}">NAT GEO NEWS</a></button>
+
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('bbcNews')}}">
+                    BBC NEWS
+                </a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('foxNews')}}">
+                    FOX NEWS</a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('cnnNews')}}">
+                    CNN NEWS
+                </a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('mtvNews')}}">
+                    MTV NEWS
+                </a>
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('natgeoNews')}}">
+                    NAT GEO NEWS
+                </a>
+            </button>
         </div>
    </div>
 </body>
