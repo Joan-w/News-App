@@ -14,12 +14,9 @@ News Hub is a web appliction that displays selected news sources from around the
 |           Behaviour                            |         Input        |                  Output               |
 |------------------------------------------------|----------------------|---------------------------------------|
 |               Displays news sources            |   On page load       |     List of various news sources      |
-|  Displays articles from a selected news source |  Click a news source | Redirected to a page with a list of
-                                                                             articles from   that source        |
-|      Display the preview of an article         |      On page load    | Each article displays title, author, 
-                                                                           description and publication date     |
-|              Read an entire article            |      Click *'Read'*  | Redirected to the news home page to 
-                                                                                read the entire article         |
+|  Displays articles from a selected news source |  Click a news source | Redirected to a page with a list of articles from that source        |
+|      Display the preview of an article         |      On page load    | Each article displays title, author, description and publication date     |
+|              Read an entire article            |      Click *'Read'*  | Redirected to the news home page to read the entire article         |
 
 ## Prerequisites
 
