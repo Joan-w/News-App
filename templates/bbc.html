@@ -42,27 +42,23 @@
             </row>
         </div>
         <div class="container text-center">
-            <!-- {% for pubAt, author, news, desc, url in context %}
-            <p>{{pubAt}}</p>
-            <p>{{author}}: {{news}}</p>
-            <p> {{desc}} </p>
-            <p><a href="{{url}}" target="_blank">Read more</a></p>
-            {% endfor %} -->
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                  {% for pubAt, author, news, desc, url in context %}
-                  <h6 style="font-weight: bolder;" class="card-text">{{pubAt}}</h6>
-                    <h4>{{author}}: {{news}}</h4>
-                    <p style="font-size: 30px; font-family: 'Times New Roman', Times, serif;
-                     color: rgb(12, 12, 66);"> {{desc}} </p>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a style="color: rgb(12, 12, 66); font-weight: bold; text-decoration: none;" href="{{url}}" target="_blank">
-                            Read more
-                        </a>
-                    </button>
-                    {% endfor %}
-                </div>
-            </div>
+            <row class="col-md-12">
+                {% for pubAt, author, news, desc, url in context %}
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                        <h6 style="font-weight: bolder;" class="card-text">{{pubAt}}</h6>
+                            <h4>{{author}}: {{news}}</h4>
+                            <p style="font-size: 30px; font-family: 'Times New Roman', Times, serif;
+                            color: rgb(12, 12, 66);"> {{desc}} </p>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <a style="color: rgb(12, 12, 66); font-weight: bold; text-decoration: none;" href="{{url}}" target="_blank">
+                                    Read more
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                {% endfor %}
+            </row>
        </div>
     </div>
 </body>
