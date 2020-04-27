@@ -16,7 +16,7 @@ News Hub is a web appliction that displays selected news sources from around the
 |               Displays news sources            |   On page load       |     List of various news sources      |
 |  Displays articles from a selected news source |  Click a news source | Redirected to a page with a list of articles from that source        |
 |      Display the preview of an article         |      On page load    | Each article displays title, author, description and publication date     |
-|              Read an entire article            |      Click *'Read'*  | Redirected to the news home page to read the entire article         |
+|            Read an entire article              |    Click **'Read'**  | Redirected to the news home page to read the entire article         |
 
 ## Prerequisites
 
@@ -35,10 +35,12 @@ You need the following installation to run the application locally on your machi
 * Create a virtual environmeent, open using code
 * Visit [https://newsapi.org/] and register for an API key and edit app.py with your own api_key.
 
+    ```
     export NEWS_API_KEY='<Your-Api-Key>'
     python3.6 run.py server
+    ```
 
-* Once started, the project can be accessed on your local host using the address localhost:5000
+* Once started, the project can be accessed on your local host using the address ```localhost:5000```
 
 ## Technologies Used
 
