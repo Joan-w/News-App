@@ -10,30 +10,35 @@
 <body>
     <div class="container-fluid">
         <div class="jumbotron text-center">
-            <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('bbcNews')}}">
-                    BBC NEWS
-                </a>
-            </button>
-            <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('foxNews')}}">
-                    FOX NEWS</a>
-            </button>
-            <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('cnnNews')}}">
-                    CNN NEWS
-                </a>
-            </button>
-            <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('mtvNews')}}">
-                    MTV NEWS
-                </a>
-            </button>
-            <button class="btn btn-outline-primary" type="button">
-                <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('natgeoNews')}}">
-                    NAT GEO NEWS
-                </a>
-            </button>
+            <h1>BBC NEWS</h1>
+        </div>
+        <div class="container text-center" style="border:black; height: 100px;">
+            <row class="col-md-12">
+                <button class="btn btn-outline-primary" type="button">
+                    <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('bbcNews')}}">
+                        BBC NEWS
+                    </a>
+                </button>
+                <button class="btn btn-outline-primary" type="button">
+                    <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('foxNews')}}">
+                        FOX NEWS</a>
+                </button>
+                <button class="btn btn-outline-primary" type="button">
+                    <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('cnnNews')}}">
+                        CNN NEWS
+                    </a>
+                </button>
+                <button class="btn btn-outline-primary" type="button">
+                    <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('mtvNews')}}">
+                        MTV NEWS
+                    </a>
+                </button>
+                <button class="btn btn-outline-primary" type="button">
+                    <a style="color: crimson; font-weight: bold; text-decoration: none;" href="{{url_for('natgeoNews')}}">
+                        NAT GEO NEWS
+                    </a>
+                </button>
+            </row>
         </div>
         <div class="container text-center">
             {% for pubAt, author, news, desc, url in context %}
